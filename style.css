@@ -1,0 +1,428 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    height: 80px;
+    background-color:black;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 1300px;
+    position: fixed;
+    z-index: 1;
+    
+    
+    
+}
+.logo_container{
+    width: 15%;
+    
+    height: 80px;
+}
+
+
+.logo{
+    height: 35px;
+    padding-left: 80px;
+    margin-top: 20px;
+}
+.menu{
+    width: 45%; 
+   
+    height: 80px;
+}
+.menu_names{
+    display: flex;
+    margin-top: 25px;
+    padding-left: 10px;
+}
+.items{
+    margin: 8px;  
+    font-size: 18px;
+    list-style: none;
+    font-weight: 700;
+}
+#menu_items{
+    text-decoration: none;
+    color: rgba(242,244,246,.9);
+    
+}
+
+#menu_items:hover{
+    text-decoration: underline white;
+}
+.search_box{
+    width: 15%;
+    height: 80px;
+    float: left;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#search{
+    height: 40px;
+    width: 200px;
+    background-color: black;
+    border-color: white;
+    
+}
+.searchbtn{
+
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border: none;
+    
+    
+}
+
+#searchbutton{
+    color: white;
+   
+}
+
+
+
+.dropbtn{
+    margin-left: 100px;
+    margin-top: 30px;
+    background-color: black;
+    border: none;
+}
+.dropbtn:hover{
+    background-color: rgb(0, 60, 100);
+}
+
+
+
+.dropbtn a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.dropfull{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.dropdown{
+
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.dropdown1{
+    width: 50%;
+    margin-top: 100px;
+    display: none;
+   
+
+}
+
+.dropdown2{
+    width: 50%;
+    margin-top: 100px;
+    float: right;
+    margin-left: 80px;
+    display: none;
+    
+}
+
+.dropbtn:hover + .dropdown{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+}
+.dropdown1 a{
+    text-decoration: none;
+   
+}
+
+.dropdown2 a{
+    text-decoration: none;
+   
+}
+.dropdown1 li{
+    list-style: none;
+}
+
+.dropdown2 li{
+    list-style: none;
+}
+
+.item1{
+    width: 1300px;
+}
+.Carousel_Container{
+    width: 1300px;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-top: 80px;
+    
+    
+    
+}
+.Carousel_Container  ::-webkit-scrollbar{scrollbar-width: 0;}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.Carousel_Container{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.Carousel_Container .item{
+    
+    display: inline-flex;
+    scroll-snap-align: start;
+    
+    
+    
+}
+.pics a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    margin: 10px;  
+    background-color: black; 
+    border-radius: 40%; 
+    
+}
+.pics{
+    display: flex;
+    justify-content: center;   
+}
+
+.maincontainer{
+    width: 1300px;
+    background-color: #0f171e;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 1300px;
+    margin-top: 0;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
+}
+.cards1{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 1300px;
+    scroll-snap-type: start;
+    
+   
+    
+}
+.carditems:hover{
+
+    transform: scale(1.2);
+}
+
+@keyframes scaleImage{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+
+.carditems{
+    width: 280px;
+    margin: 10px;
+    
+    
+    
+}
+.cardtext1{
+    margin-top: 0%;
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    margin: 10px;
+    background-color:#0f171e;
+}
+.carddiv1:hover + .cardtext1{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+
+
+}
+
+.cardtext2{
+    margin-top: 0%;
+    display: none;
+    width: fit-content;
+    height: fit-content
+    
+       
+}
+.carddiv2:hover + .cardtext2{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    background-color:#0f171e;
+
+
+}
+
+.cardtext3{
+    margin-top: 0%;
+    display: none;
+    width: fit-content;
+    height: fit-content
+    
+       
+}
+.carddiv3:hover + .cardtext3{
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    background-color:#0f171e;
+
+
+}
+
+.cardtext4{
+    margin-top: 0%;
+    display: none;
+    width: fit-content;
+    height: fit-content
+    
+       
+}
+.carddiv4:hover + .cardtext4{
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    background-color:#0f171e;
+
+
+}
+
+
+.navigation{
+    margin-left: 600px;
+    height: 10px;
+}
+.bar{
+    width: 20px;
+    margin: 10px;
+    cursor: pointer;
+   
+}
+
+
+
+.bar:hover{
+    background: rgb(124, 116, 116);
+}
+
+.Carousel_Container::-webkit-scrollbar {
+    display: none;
+}
+
+.cards::-webkit-scrollbar {
+    display: none;
+}
+
+.cards1::-webkit-scrollbar {
+    display: none;
+}
+
+.Cinderella{
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+}
+
+.Cinderella_card{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
+}
+
+.Cinderella_card_items{
+    width: 500px;
+    margin: 20px;
+}
+
+.Cinderella_card_items:hover {
+    transform: scale(1.2);
+}
+
+.Cinderella_card::-webkit-scrollbar {
+    display: none;
+}
+
+.Language_card{
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
+    
+}
+
+.Language_card::-webkit-scrollbar {
+    display: none;
+}
+
+.Language_card_items{
+    width: 140px;
+    height: 140px;
+    margin: 5px;
+}
+
+
+.footer{
+    width: 1300px;
+    height: 200px;
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.footer_logo{
+    width: 100px;
+    align-self: center;
+}
+.footer_content{
+    margin-top: 40px;
+}
