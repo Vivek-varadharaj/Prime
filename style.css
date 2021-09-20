@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 
@@ -12,9 +13,10 @@
     padding-bottom: 20px;
     display: flex;
     flex-direction: row;
-    width: 1300px;
+    width: 100%;
     position: fixed;
     z-index: 1;
+    
     
     
     
@@ -129,6 +131,12 @@
    
 
 }
+.maincontainer::-webkit-scrollbar{
+    display: none;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
 
 .dropdown2{
     width: 50%;
@@ -166,7 +174,7 @@
     width: 1300px;
 }
 .Carousel_Container{
-    width: 1300px;
+    width: 100%;
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -174,6 +182,7 @@
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     padding-top: 80px;
+    object-fit: contain;
     
     
     
@@ -208,27 +217,29 @@
 }
 
 .maincontainer{
-    width: 1300px;
+    width: 100%;
     background-color: #0f171e;
 }
-.cards{
+.cards {
+    padding-top: 13px;
+    padding-left: 22px;
     display: flex;
     justify-content: space-between;
-    overflow-x: auto;
+    /* overflow-x: auto; */
     overflow-y: hidden;
-    width: 1300px;
+    width: 100%;
     margin-top: 0;
-    padding: 10px;
+    /* padding: 10px; */
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    
+    animation: animate 10s linear infinite;
 }
 .cards1{
     display: flex;
     justify-content: space-between;
     overflow-x: auto;
     overflow-y: hidden;
-    width: 1300px;
+    width: 100%;
     scroll-snap-type: start;
     
    
@@ -255,58 +266,92 @@
     
     
 }
-.cardtext1{
+.cardtext1 {
+    width: 280px;
+    top: 93%;
     margin-top: 0%;
     display: none;
-    width: fit-content;
+    /* width: fit-content; */
     height: fit-content;
     margin: 10px;
-    background-color:#0f171e;
+    background-color: #0f171e;
+    position: absolute;
+    height: 200px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.164);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    line-height: 25px;
+    left: 1.7%;
+    box-shadow:0 0 5px rgba(255, 255, 255, 0.116);
+    padding: 10px;
+    font-size: 12px;
 }
 .carddiv1:hover + .cardtext1{
     display: flex;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: bold;
-    position: relative;
+    flex-direction: column;
+    transform: scale(1.2);
+   
 
 
 }
 
-.cardtext2{
+.cardtext2 {
+    width: 280px;
+    top: 93%;
     margin-top: 0%;
     display: none;
-    width: fit-content;
-    height: fit-content
+    /* width: fit-content; */
+    height: fit-content;
+    margin: 10px;
+    background-color: #0f171e;
+    position: absolute;
+    height: 200px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.164);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    line-height: 25px;
     
-       
+    box-shadow:0 0 5px rgba(255, 255, 255, 0.116);
+    padding: 10px;
+    font-size: 12px;
+    left: 25.1%;
 }
 .carddiv2:hover + .cardtext2{
     display: flex;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: bold;
-    position: relative;
-    background-color:#0f171e;
+    flex-direction: column;
+    transform: scale(1.2);
+   
 
 
 }
 
 .cardtext3{
+    width: 280px;
+    top: 93%;
     margin-top: 0%;
     display: none;
-    width: fit-content;
-    height: fit-content
+    /* width: fit-content; */
+    height: fit-content;
+    margin: 10px;
+    background-color: #0f171e;
+    position: absolute;
+    height: 200px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.164);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    line-height: 25px;
     
+    box-shadow:0 0 5px rgba(255, 255, 255, 0.116);
+    padding: 10px;
+    font-size: 12px;
+    left: 25.1%;
        
 }
-.carddiv3:hover + .cardtext3{
-    display: block;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: bold;
-    position: relative;
-    background-color:#0f171e;
+.carddiv3:hover  .cardtext3{
+    display: flex;
+    flex-direction: column;
+    transform: scale(1.2);
+   
 
 
 }
@@ -409,7 +454,7 @@
 
 
 .footer{
-    width: 1300px;
+    width: 100%;
     height: 200px;
     text-align: center;
     padding-top: 40px;
@@ -425,4 +470,21 @@
 }
 .footer_content{
     margin-top: 40px;
+}
+@keyframes animate{
+    0%{
+        left: 0;
+    }
+    5%{
+        left: 0;
+    }
+    10%{
+        left: -100;
+    }
+    20%{
+        left: -100;
+    }
+    100%{
+        left: -200;
+    }
 }
