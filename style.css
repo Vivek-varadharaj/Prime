@@ -325,7 +325,7 @@ body::-webkit-scrollbar{
 
 }
 
-.cardtext3{
+.cardtext3 {
     width: 280px;
     top: 93%;
     margin-top: 0%;
@@ -340,12 +340,10 @@ body::-webkit-scrollbar{
     box-shadow: rgba(0, 0, 0, 0.164);
     border: 1px solid rgba(255, 255, 255, 0.24);
     line-height: 25px;
-    
-    box-shadow:0 0 5px rgba(255, 255, 255, 0.116);
+    box-shadow: 0 0 5px rgb(255 255 255 / 12%);
     padding: 10px;
     font-size: 12px;
-    left: 25.1%;
-       
+    left: 8.9;
 }
 .carddiv3:hover  .cardtext3{
     display: flex;
